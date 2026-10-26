@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La ChuleShop | Tenis con Drip</title>
+  <link rel="stylesheet" href="chule.css">
+  <script src="chule.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>LA CHULE<span>SHOP</span></h1>
+    <p>Tu estilo, tus reglas. Encuentra tu drip.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Los mejores tenis están aquí</h2>
+      <p>Tenis urbanos, deportivos y exclusivos.</p>
+      <a href="#catalogo" class="boton">Ver colección</a>
+    </section>
+
+    <section id="catalogo">
+      <h2>Nuestra colección</h2>
+
+      <label for="filtro">Filtrar por categoría:</label>
+      <select id="filtro">
+        <option value="todos">Todos</option>
+        <option value="urbanos">Urbanos</option>
+        <option value="deportivos">Deportivos</option>
+        <option value="basket">Basket</option>
+      </select>
+
+      <input
+        type="search"
+        id="busqueda"
+        placeholder="Buscar tenis..."
+        aria-label="Buscar tenis"
+      >
+
+      <div id="productos" class="productos"></div>
+      <p id="sin-resultados" hidden>No se encontraron productos.</p>
+    </section>
+
+    <section class="carrito">
+      <h2>Mi carrito</h2>
+      <p>Productos agregados: <strong id="cantidad">0</strong></p>
+      <ul id="lista-carrito"></ul>
+      <p>Total: <strong id="total">₡0</strong></p>
+      <button id="vaciar">Vaciar carrito</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 La ChuleShop | Sneakers con drip.</p>
+  </footer>
+</body>
+</html>
